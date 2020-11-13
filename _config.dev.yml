@@ -3,13 +3,13 @@
 url: http://localhost:4000
 
 analytics:
-  provider: "google-universal"
+  provider: false
   google:
-    tracking_id          : "UA-181535155-1"
+    tracking_id          :
 
 comments:
   disqus:
-    shortname            : "m053m716"
+    shortname            :
 
 sass:
   style: expanded
