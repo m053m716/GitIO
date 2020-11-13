@@ -116,9 +116,14 @@ author:
 include:
   - .htaccess
   - _pages
+  - _publications
+  - _research
+  - _layouts
+  - _data
+  - _talks
   - files
   - "*.pdf"
-  - "papers/*.pdf"
+  - "files/*.pdf"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -262,6 +267,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
@@ -288,17 +294,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+article_archive:
+  type: liquid
+  path: /publications/
 
 
 # HTML Compression
