@@ -10,8 +10,8 @@ locale                   : "en-US"
 title                    : "Max Murphy"
 title_separator          : "-"
 name                     : &name "Maxwell D. Murphy"
-description              : &description "Nigel's API to the world."
-url                      : https://m053m716.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Full Stack Engineer"
+url                      : "https://m053m716.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
 teaser                   : "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/images/teaser_image.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -22,9 +22,9 @@ read_more                : "disabled" # if enabled, adds "Read more" links to ex
 talkmap_link             : false #change to true to add link to talkmap on talks page
 researchmap_link         : false #change to true to add link to researchmap on research page
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "m053m716"
+    shortname            : # "m053m716"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
