@@ -97,7 +97,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/maxdmurphy/"
+  linkedin         : "maxdmurphy"
   orcid            : "https://orcid.org/0000-0002-8559-2361"
   pinterest        :
   soundcloud       :
@@ -170,10 +170,10 @@ kramdown:
 
 # Collections
 collections:
-  research:
+  publications:
     output: true
     permalink: /:collection/:path/
-  publications:
+  research:
     output: true
     permalink: /:collection/:path/
   portfolio:
