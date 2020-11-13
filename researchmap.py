@@ -1,6 +1,6 @@
 
 
-# # Leaflet cluster map of talk locations
+# # Leaflet cluster map of research locations
 #
 # (c) 2016-2017 R. Stuart Geiger, released under the MIT license
 #
