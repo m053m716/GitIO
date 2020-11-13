@@ -14,7 +14,7 @@ description              : &description "Full Stack Engineer"
 url                      : "https://m053m716.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
-teaser                   : "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/images/teaser_image.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : # "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/images/teaser_image.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -75,7 +75,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Max Murphy"
+  name             : "Maxwell D. Murphy"
   avatar           : "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/images/Murphy-bio-photo.jpg"
   bio              : "PhD, Bioengineering"
   location         : "Kansas City, KS"
@@ -104,7 +104,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "MaxwellDMurphy"
+  twitter          : *twitter
   vine             :
   weibo            :
   xing             :
@@ -117,6 +117,8 @@ include:
   - .htaccess
   - _pages
   - files
+  - "*.pdf"
+  - "papers/*.pdf"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"

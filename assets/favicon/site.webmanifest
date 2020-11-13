@@ -3,7 +3,7 @@
     "short_name": "About Max",
     "icons": [
         {
-            "src": "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/favicon.ico",
+            "src": "https://media.githubusercontent.com/media/m053m716/m053m716.github.io/master/assets/favicon/favicon.ico",
             "sizes": "64x32",
             "type": "image/ico"
         },
