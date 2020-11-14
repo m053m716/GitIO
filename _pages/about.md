@@ -19,4 +19,3 @@ Short (1-2 sentence) about me goes here.
 News
 ------
 Exciting news and updates here.
-
