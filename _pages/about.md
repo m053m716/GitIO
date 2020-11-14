@@ -11,6 +11,8 @@ redirect_from:
   - "/index.html"
 ---
 
+{% include base_path %}
+
 
 About Me
 ======
