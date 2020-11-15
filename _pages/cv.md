@@ -1,15 +1,20 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  - /cv.html
 ---
 
 {% include base_path %}
 {% capture written_label %}'None'{% endcapture %}
 
+Education
+======
+* B.S. in Biology, Stanford University, 2011
+* Ph.D in Bioengineering, University of Kansas, 2020
 
 Skills
 ======
@@ -21,11 +26,6 @@ Skills
   * Matlab/Python/Tableau for analysis
   * CSS/JS for web design
 * Rat pellet retrieval motor model
-
-Education
-======
-* B.S. in Biology, Stanford University, 2011
-* Ph.D in Bioengineering, University of Kansas, 2020
 
 Work experience
 ======
