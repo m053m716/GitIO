@@ -22,9 +22,9 @@ read_more                : "disabled" # if enabled, adds "Read more" links to ex
 talkmap_link             : true #change to true to add link to talkmap on talks page
 researchmap_link         : true #change to true to add link to researchmap on research page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname            : "m053m716"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -201,6 +201,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comment: true
       comments: true
       share: true
       related: true
@@ -210,6 +211,8 @@ defaults:
       type: pages
     values:
       layout: single
+      comment: true
+      comments: true
       author_profile: true
   # _publications
   - scope:
@@ -219,6 +222,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comment: true
       comments: true
   # _research
   - scope:
@@ -229,6 +233,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      comments: true
   # _talks
   - scope:
       path: "/talks/"
@@ -237,6 +242,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      comment: true
+      comments: true
 
 # Sass/SCSS
 sass:

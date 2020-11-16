@@ -4,8 +4,8 @@ collection: talks
 type: "Talk"
 permalink: /talks/2017-06-08-PlasticityLecture/
 redirect_from:
-  - "/2017-06-08-PlasticityLecture.html
-  - "/2017-06-08-PlasticityLecture
+  - "/talks/2017-06-08-PlasticityLecture.html"
+  - "/talks/2017-06-08-PlasticityLecture"
 venue: "Rockhurst"
 date: 2017-06-08
 location: "Kansas City MO, USA"

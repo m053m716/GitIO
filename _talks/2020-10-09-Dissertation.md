@@ -4,8 +4,8 @@ collection: talks
 type: "Talk"
 permalink: /talks/2020-10-09-Dissertation/
 redirect_from:
-  - "/2020-10-09-Dissertation.html
-  - "/2020-10-09-Dissertation
+  - "/talks/2020-10-09-Dissertation.html"
+  - "/talks/2020-10-09-Dissertation"
 venue: "Global (Zoom)"
 date: 2020-10-09
 location: "Kansas City KS, USA"
