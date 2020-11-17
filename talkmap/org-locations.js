@@ -10,32 +10,22 @@ var addressPoints = [
     -94.581694
   ],
   [
-    "Lawrence KS, USA",
-    38.958268,
-    -95.253629
-  ],
-  [
-    "Stanford CA, USA",
-    37.432096,
-    -122.176518
-  ],
-  [
-    "San Diego CA, USA",
+    "San Diego CA, USA | SfN 2018 | Poster",
     32.707421,
     -117.163128
   ],
   [
-    "Washington D.C., USA",
+    "Washington D.C., USA | SfN 2017 | Poster",
     38.903499,
     -77.023398
   ],
   [
-    "Pittsburgh PA, USA",
+    "Pittsburgh PA, USA | Mechanisms of Recovery from Stroke | <a href='https://docs.google.com/presentation/d/1BAc7-nJ0wvuue4Tzjk68soYhYTV_RZvcdlQ4tooezRY/edit?usp=sharing'>Mechanisms of recovery from stroke</a>",
     40.441832,
     -79.947192
   ],
   [
-    "Florence, IT",
+    "Florence, IT | ISCAS 2018 | Proceedings Paper (presented by David Guggenmos)",
     43.771955,
     11.246278
   ]

@@ -65,6 +65,6 @@ redirect_from:
 ---
 
 ## Service ##
-See my thoughts on service **[here](https://m053m716.github.io/posts/2020/11/On-Academic-Service/)**.
+See my thoughts on service **[here](https://m053m716.github.io/posts/2020/11/On-Academic-Service/)**. In general, I am happy to assist those who come to me with honest questions or to collaborate and assist in any capacity that I am able given constraints of time and bandwidth.
 
 ---
