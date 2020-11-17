@@ -11,13 +11,17 @@ redirect_from:
 {% include base_path %}
 {% capture written_label %}'None'{% endcapture %}
 
-Education
-======
-* B.S. in Biology, Stanford University, 2011
-* Ph.D in Bioengineering, University of Kansas, 2020
+---
 
-Skills
-======
+## Education ##
+* B.S. in Biology, Stanford University, 2011
+  + 2-time All-American (Fencing)
+* Ph.D in Bioengineering, University of Kansas, 2020
+  + Thesis: *Neurophysiological mechanisms of sensorimotor recovery from stroke*
+
+---
+
+## Skills ##
 * Full stack neurophysiology engineer
   * CAD for physical device design
   * FPGA/microcontroller for closed-loop
@@ -27,31 +31,40 @@ Skills
   * CSS/JS for web design
 * Rat pellet retrieval motor model
 
-Work experience
-======
-* 2014 - 2020: Graduate Research Assistant, Nudo Lab
-  * University of Kansas Medical Center
-  * Developed parallel pipeline for covarying neural time-series during movement with functional recovery in a rodent model.
-  * Applied dynamical systems models to identify candidate physiological determinants of rehabilitation for future study.
+---
 
-* 2013 - 2014: Research Technician, Identigen NA
-  * Lawrence, KS
-  * Liquid-handling system, SNP-genotype array tests.
+## Work experience ##
+### 2014 - 2020: Graduate Research Assistant, KUMC ###
+* Cortical Plasticity Lab
+  + PI: Randy Nudo
+  + Supervisor: David Guggenmos
+* Developed data pipelines from "the edge" to "the cloud."
+* Applied control systems models to cortical activity in relation to motor rehabilitation.
 
-Publications
-======
+### 2013 - 2014: Research Technician, Lawrence KS ###
+* Identigen North America
+  + Supervisor: Stacie Eliades-Becker
+* Assisted in installation of high-throughput tape-based liquid-handling system.
+* Day-to-day involved conducting SNP-genotype array tests for bovine heritage.
+
+---
+
+## Publications ##
+
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+---
   
-Talks
-======
+## Talks ##
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-Working as part of a team is very important to me. I actively seek to assist others in any way I can as it relates to my work, which is also very important to me. While this has meant that the time I consider my own is ever-dwindling, I have enjoyed making time for work-related service, such as the events put on by the Kansas City chapter of Society for Neuroscience. 
 
-I am always happy to field questions, particularly those related to my work. In terms of "academic service," I quite adamantly reject the stereotypical academic model; my opinion is that "peer-review" is now performed actively and on an individual basis by those who seek out and curate knowledge from pre-print archives or elsewhere that is directly related to the subjects that interest them. Providing comments on pre-print articles, or e-mailing an author directly with thoughts on their work, are both more sincere (and more likely to be helpful) in the process of conducting rigorous science than anything that subscription journals have to offer. I'm amenable to changing this stance, but would like to see more change from the large institutions that govern who does or does not get a say in the scientific peer review process.
+---
+
+## Service ##
+See my thoughts on service **[here](https://m053m716.github.io/posts/2020/11/On-Academic-Service/)**.
+
+---

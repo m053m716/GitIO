@@ -14,6 +14,7 @@ description              : &description "Full stack engineer"
 url                      : https://m053m716.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
+favicon                  : "https://m053m716.github.io/assets/favicon/favicon.ico"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -24,7 +25,7 @@ researchmap_link         : true #change to true to add link to researchmap on re
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "m053m716"
+    shortname            : "https-m053m716-github-io"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -80,7 +81,6 @@ analytics:
 
 
 # Site Author
-# This is causing problems?
 author: 
   name             : "Max Murphy"
   avatar           : "profile_circle.png"
@@ -91,7 +91,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=CUGkYf8AAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -189,6 +189,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -197,6 +200,18 @@ defaults:
   - scope:
       path: ""
       type: news
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comment: true
+      comments: true
+      share: true
+      related: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
     values:
       layout: single
       author_profile: true
@@ -216,17 +231,17 @@ defaults:
       author_profile: true
   # _publications
   - scope:
-      path: "/publications/"
+      path: ""
       type: publications
     values:
-      layout: single
+      layout: manuscript
       author_profile: true
       share: true
       comment: true
       comments: true
   # _research
   - scope:
-      path: "/research/"
+      path: ""
       type: research
     values:
       layout: single
@@ -236,7 +251,7 @@ defaults:
       comments: true
   # _talks
   - scope:
-      path: "/talks/"
+      path: ""
       type: talks
     values:
       layout: talk
@@ -290,6 +305,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+collection_archive:
+  type: liquid
+  path: /collections/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
