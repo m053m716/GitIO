@@ -13,8 +13,8 @@ tags:
   - dungeons and dragons
 ---
 
-# Successful Defense! #
+### Successful Defense! ###
 I successfully defended my doctoral thesis (*Neurophysiological mechanisms of sensorimotor recovery from stroke*), with honors!
 
-## Aftermath ##
+#### Aftermath ####
 I celebrated with friends by playing Dungeons and Dragons, in which a long-running (2-year) campaign arc reached its satisfying conclusion. 
