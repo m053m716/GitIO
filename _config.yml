@@ -14,16 +14,18 @@ description              : &description "Full stack engineer"
 url                      : https://m053m716.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
+favicon                  : "https://m053m716.github.io/assets/favicon/favicon.ico"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+talkmap_link             : true #change to true to add link to talkmap on talks page
+researchmap_link         : true #change to true to add link to researchmap on research page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname            : "https-m053m716-github-io"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -79,10 +81,9 @@ analytics:
 
 
 # Site Author
-# This is causing problems?
 author: 
   name             : "Max Murphy"
-  avatar           : "bio-photo.jpg"
+  avatar           : "profile_circle.png"
   bio              : "PhD, Bioengineering"
   location         : "Kansas City, KS"
   employer         :
@@ -90,7 +91,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=CUGkYf8AAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -176,6 +177,9 @@ kramdown:
 
 # Collections
 collections:
+  news:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -185,10 +189,25 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comment: true
+      comments: true
+      share: true
+      related: true
   # _posts
   - scope:
       path: ""
@@ -197,6 +216,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comment: true
       comments: true
       share: true
       related: true
@@ -206,24 +226,18 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
+      comment: true
       comments: true
+      author_profile: true
   # _publications
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
+      layout: manuscript
       author_profile: true
       share: true
+      comment: true
       comments: true
   # _research
   - scope:
@@ -234,6 +248,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      comments: true
   # _talks
   - scope:
       path: ""
@@ -242,6 +257,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      comment: true
+      comments: true
 
 # Sass/SCSS
 sass:
@@ -253,7 +270,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -288,6 +305,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+collection_archive:
+  type: liquid
+  path: /collections/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:

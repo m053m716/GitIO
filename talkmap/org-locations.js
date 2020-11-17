@@ -1,22 +1,32 @@
 var addressPoints = [
   [
-    "Berkeley CA, USA",
-    37.8708393,
-    -122.2728638
+    "Kansas City KS, USA | Dissertation Defense | <a href='http://m053m716.github.io/talks/2020-10-09-Dissertation'>Mechanisms of Recovery from Motor Stroke</a>",
+    39.057525,
+    -94.608963
   ],
   [
-    "London, UK",
-    51.5073219,
-    -0.1276473
+    "Kansas City MO, USA  | Rockhurst Guest Lecture | <a href='http://m053m716.github.io/talks/2017-06-08-Rockhurst'>Neuroplasticity and neuroprosthetics</a>",
+    39.033598,
+    -94.581694
   ],
   [
-    "San Francisco, California",
-    37.7792808,
-    -122.4192362
+    "San Diego CA, USA | SfN 2018 | Poster",
+    32.707421,
+    -117.163128
   ],
   [
-    "Los Angeles, CA",
-    34.0543942,
-    -118.2439408
+    "Washington D.C., USA | SfN 2017 | Poster",
+    38.903499,
+    -77.023398
+  ],
+  [
+    "Pittsburgh PA, USA | Mechanisms of Recovery from Stroke | <a href='https://docs.google.com/presentation/d/1BAc7-nJ0wvuue4Tzjk68soYhYTV_RZvcdlQ4tooezRY/edit?usp=sharing'>Mechanisms of recovery from stroke</a>",
+    40.441832,
+    -79.947192
+  ],
+  [
+    "Florence, IT | ISCAS 2018 | Proceedings Paper (presented by David Guggenmos)",
+    43.771955,
+    11.246278
   ]
 ];
