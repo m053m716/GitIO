@@ -14,7 +14,10 @@ description              : &description "Full stack engineer"
 url                      : https://m053m716.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
+search                   : true
+search_provider          : algolia
 favicon                  : "https://m053m716.github.io/assets/favicon/favicon.ico"
+logo                     : "/images/nigeLab_Logo.PNG"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -56,6 +59,13 @@ google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
+
+# Search Engine
+algolia:
+  application_id: AYIVNI1SRI # YOUR_APPLICATION_ID
+  index_name: test_HOME # YOUR_INDEX_NAME
+  search_only_api_key: db4f8b7f91c76b91e4ec53a3c29dd690 # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
 
 # Social Sharing
 twitter:
@@ -196,18 +206,18 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
+  # _news
   - scope:
       path: ""
       type: news
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comment: true
-      comments: true
-      share: true
-      related: true
+      read_time: false
+      comment: false
+      comments: false
+      share: false
+      related: false
   # _posts
   - scope:
       path: ""
@@ -286,6 +296,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 

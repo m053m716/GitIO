@@ -1,6 +1,7 @@
 ---
 title: 'Successful Dissertation Defense'
 date: 2020-10-09
+collection: 'news'
 permalink: /news/2020/10/09/Dissertation/
 tags:
   - dissertation
@@ -9,8 +10,6 @@ tags:
   - rats
   - reaching
   - population dynamics
-  - spike
-  - dungeons and dragons
 ---
 
 ### Successful Defense! ###

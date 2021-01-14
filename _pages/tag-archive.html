@@ -1,17 +1,57 @@
 ---
 layout: archive
 permalink: /tags/
-title: "Posts by Tags"
+title: "Content by Tags"
 author_profile: true
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="tags" %}
+{% include group-by-array collection=site.news field="tags" %}
+<h2 id="News">News</h2>
+{% for tag in group_names %}
+  {% assign news = group_items[forloop.index0] %}
+  <h3 id="news-{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+  {% for news_page in news %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
 
+{% include group-by-array collection=site.posts field="tags" %}
+<h2 id="Posts">Posts</h2>
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  <h3 id="post-{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
   {% for post in posts %}
     {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.publications field="tags" %}
+<h2 id="Publications">Publications</h2>
+{% for tag in group_names %}
+  {% assign publications = group_items[forloop.index0] %}
+  <h3 id="publication-{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+  {% for publication in site.publications reversed %}
+    {% include archive-manuscript.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.research field="tags" %}
+<h2 id="Research">Research</h2>
+{% for tag in group_names %}
+  {% assign research = group_items[forloop.index0] %}
+  <h3 id="research-{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+  {% for research_item in research %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.talks field="tags" %}
+<h2 id="Talks">Talks</h2>
+{% for tag in group_names %}
+  {% assign talks = group_items[forloop.index0] %}
+  <h3 id="talk-{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h3>
+  {% for talk in talks %}
+    {% include archive-single-talk.html %}
   {% endfor %}
 {% endfor %}

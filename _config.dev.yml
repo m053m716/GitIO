@@ -9,7 +9,7 @@ analytics:
 
 comments:
   disqus:
-    shortname            :
+    shortname            : "https-m053m716-github-io"
 
 sass:
   style: expanded

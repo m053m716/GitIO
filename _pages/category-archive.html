@@ -1,17 +1,57 @@
 ---
 layout: archive
 permalink: /categories/
-title: "Posts by Category"
+title: "Content by Category"
 author_profile: true
 ---
 
 {% include base_path %}
-{% include group-by-array collection=site.posts field="categories" %}
+{% include group-by-array collection=site.news field="categories" %}
+<h2 id="News">News</h2>
+{% for category in group_names %}
+  {% assign news = group_items[forloop.index0] %}
+  <h3 id="news-{{ category | slugify }}" class="archive__subtitle">{{ category }}</h3>
+  {% for news_page in news %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
 
+{% include group-by-array collection=site.posts field="categories" %}
+<h2 id="Posts">Posts</h2>
 {% for category in group_names %}
   {% assign posts = group_items[forloop.index0] %}
-  <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+  <h3 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h3>
   {% for post in posts %}
     {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.publications field="categories" %}
+<h2 id="Publications">Publications</h2>
+{% for category in group_names %}
+  {% assign publications = group_items[forloop.index0] %}
+  <h3 id="publication-{{ category | slugify }}" class="archive__subtitle">{{ category }}</h3>
+  {% for publication in site.publications reversed %}
+    {% include archive-manuscript.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.research field="categories" %}
+<h2 id="Research">Research</h2>
+{% for category in group_names %}
+  {% assign research = group_items[forloop.index0] %}
+  <h3 id="research-{{ category | slugify }}" class="archive__subtitle">{{ category }}</h3>
+  {% for research_item in research %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
+
+{% include group-by-array collection=site.talks field="categories" %}
+<h2 id="Talks">Talks</h2>
+{% for category in group_names %}
+  {% assign talks = group_items[forloop.index0] %}
+  <h3 id="talk-{{ category | slugify }}" class="archive__subtitle">{{ category }}</h3>
+  {% for talk in talks %}
+    {% include archive-single-talk.html %}
   {% endfor %}
 {% endfor %}
