@@ -202,6 +202,9 @@ collections:
   posts:
     output: true
     permalink: /:collection/:path/
+  scripts:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -269,6 +272,18 @@ defaults:
       share: true
       comment: true
       comments: true
+  # _scripts
+  - scope:
+      path: ""
+      type: scripts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comment: true
+      comments: true
+      share: true
+      related: true
 
 # Sass/SCSS
 sass:

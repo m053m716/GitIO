@@ -8,6 +8,12 @@ main:
     
   - title: "Research"
     url: /research/
+
+  - title: "Scripts"
+    url: /scripts/
     
+  - title: "Repositories"
+    url: /repos/
+
   - title: "CV"
     url: /cv/
