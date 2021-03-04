@@ -20,15 +20,22 @@ redirect_from:
 
 <hr style="border-bottom: 2px solid #222;width: 80%;left: 10%;top:10px">
 <h2>Calendars</h2>
-<div class="tab" width="1000">
+<div class="tab">
   <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
   <button class="tablinks" onclick="openTab(event, 'Personal')">Personal</button>
+  <button class="tablinks" onclick="openTab(event, 'Scheduler')">Schedule Meeting</button>
 </div>
+
 <div id="Work" class="tabcontent" height="600" width="800">
-  <iframe src="https://exchange.andrew.cmu.edu/owa/calendar/4b5cd1db3d14429e9fab34fc7f67964f@andrew.cmu.edu/b0a1aa7acfc44c7a87080d082545e12d13403533102358856879/calendar.html" style="border-width:0" width="750" height="500" frameborder="0" scrolling="yes"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FNew_York&amp;src=bWRtdXJwaHlAYW5kcmV3LmNtdS5lZHU&amp;src=Y182M2ltYXNyczlzNXFycm8xN2djZ2d0ODc3Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19ucXIzczhraWtqbXFlY3Nvb25jMzFnMHZnY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;color=%23616161&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0" style="border:solid 1px #777" width="750" height="500" frameborder="0" scrolling="no"></iframe>
 </div>
+
 <div id="Personal" class="tabcontent" height="600" width="800">
-  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FKentucky%2FLouisville&amp;src=bWF4Lm11cnBoeTExQGdtYWlsLmNvbQ&amp;color=%23EF6C00&amp;showPrint=0&amp;showCalendars=0&amp;title=Personal%20Calendar" style="border-width:0" width="750" height="500" frameborder="0" scrolling="no"></iframe>
+  <iframe id="PersonalCal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FKentucky%2FLouisville&amp;src=bWF4Lm11cnBoeTExQGdtYWlsLmNvbQ&amp;color=%23EF6C00&amp;showPrint=0&amp;showCalendars=0&amp;title=Personal%20Calendar" style="border-width:0" width="750" height="500" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div id="Scheduler" class="tabcontent" height="650" width="800">
+    <iframe id="SchedulerCal" src="https://calendar.google.com/calendar/u/@me/selfsched?sstoken=UUpFQl8xLUdjN1VyfGRlZmF1bHR8ZGMyMzgwMjUxMmYwNzQwNzcwMTI0ZjYyM2Y2ZDNlNTE" width="750" height="500"></iframe>
 </div>
 <hr style="border-top: 2px solid #222;width: 80%;left: 10%;top:10px">
 <h2>News</h2>
