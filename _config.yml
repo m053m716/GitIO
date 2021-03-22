@@ -93,10 +93,10 @@ analytics:
 # Site Author
 author: 
   name             : "Max Murphy"
-  avatar           : "profile_circle.png"
+  avatar           : "Murphy-CMU-logo.png"
   bio              : "PhD, Bioengineering"
-  location         : "Kansas City, KS"
-  employer         :
+  location         : "Pittsburgh, PA"
+  employer         : "Carnegie Mellon University"
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=murphy+maxwell+d"
   googlescholar    : "https://scholar.google.com/citations?user=CUGkYf8AAAAJ&hl=en"
   email            :
