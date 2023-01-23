@@ -11,12 +11,12 @@ title                    : "Maxwell D. Murphy"
 title_separator          : "-"
 name                     : &name "Maxwell D. Murphy"
 description              : &description "Full stack engineer"
-url                      : https://m053m716.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://about.murphylab.net # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "m053m716/m053m716.github.io"
 search                   : true
 search_provider          : algolia
-favicon                  : "https://m053m716.github.io/assets/favicon/favicon.ico"
+favicon                  : "https://about.murphylab.net/assets/favicon/favicon.ico"
 logo                     : "/images/nigeLab_Logo.PNG"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
