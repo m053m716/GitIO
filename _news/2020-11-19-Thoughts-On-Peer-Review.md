@@ -1,11 +1,11 @@
 ---
-title: 'First Blog Post'
+title: 'Thoughts on Peer Review'
 date: 2020-11-19
 collection: 'news'
 permalink: /posts/2020/11/First-Blog-Post/
 redirect_from:
 - "/posts/2020/11/First-Blog-Post.html"
-- "/posts/2020/11/First-Blog-Post.md
+- "/posts/2020/11/First-Blog-Post.md"
 tags:
   - blog
   - link
