@@ -2,10 +2,7 @@
 title: 'Thoughts on Peer Review'
 date: 2020-11-19
 collection: 'news'
-permalink: /posts/2020/11/First-Blog-Post/
-redirect_from:
-- "/posts/2020/11/First-Blog-Post.html"
-- "/posts/2020/11/First-Blog-Post.md"
+permalink: /posts/2020/11/Thoughts-On-Peer-Review/
 tags:
   - blog
   - link
