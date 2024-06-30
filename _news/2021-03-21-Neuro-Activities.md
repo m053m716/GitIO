@@ -3,8 +3,6 @@ title: 'Neuro-Activities'
 date: 2021-03-21
 collection: 'news'
 permalink: /posts/2021/03/Neuro-Activities/
-redirect_from:
-- "/posts/2021/03/Neuro-Activities.md"
 tags:
   - blog
   - neuroscience
