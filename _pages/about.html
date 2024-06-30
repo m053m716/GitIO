@@ -4,109 +4,130 @@ title: "Home"
 date: 2024-06-30
 excerpt: "About me."
 author_profile: true
-redirect_from: 
-  - "/home/"
-  - "/home.html"
-  - "/about/"
+redirect_from:
+- "/home/"
+- "/home.html"
+- "/about/"
 ---
 
 {% include base_path %}
 
 <style>
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  height: 80vh;
-  translate: (100px, 10vh); 
-  width: 150px; /* Adjust width as needed */
-  z-index: 1000; /* Ensure it stays on top of other content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    height: 95vh;
+    transform: translate(100px, -5vh);
+    width: 150px;
+    right: 0px;
+    /* Adjust width as needed */
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
 
-.navbar:hover {
-  translate: (0px, 10vh); 
-}
+  .navbar:hover {
+    transform: translate(0px, -5vh);
+  }
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 
-.navbar ul li {
-  display: block;
-  width: 100%;
-}
+  .navbar ul li {
+    display: block;
+    width: 100%;
+  }
 
-.navbar ul li a {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  width: 100%;
-  justify-content: center;
-}
+  .navbar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    text-decoration: none;
+    width: 100%;
+    justify-content: left;
+  }
 
-.navbar ul li a img {
-  max-height: 40px;
-  max-width: 40px;
-  margin-right: 10px;
-}
+  .navbar ul li a img {
+    max-height: 40px;
+    max-width: 40px;
+    margin-right: 10px;
+  }
 
-.navbar ul li a:hover {
-  background-color: #575757;
-}
+  .navbar ul li a:hover {
+    background-color: #575757;
+  }
 
-.content {
-  margin-right: 220px; /* Adjust based on navbar width */
-  padding-top: 20px; /* Add padding to prevent content overlap */
-}
-
-
+  .content {
+    padding: 0px;
+    margin: 0px;
+  }
 </style>
 
 <nav class="navbar">
   <ul>
     <li>
       <a href="https://fitts-law-js.glitch.me/">
-        <img src="https://cdn.glitch.global/project-avatar/955142cf-dcd9-43dd-b24e-3a53cf3f4d14.png?1719418247303" alt="Fitts Task">
+        <img src="https://cdn.glitch.global/project-avatar/955142cf-dcd9-43dd-b24e-3a53cf3f4d14.png?1719418247303"
+          alt="Fitts Task">
         Fitts
       </a>
     </li>
-    <!-- Add more tasks here as needed -->
+    <li>
+      <a href="">
+        <img src="https://about.murphylab.net/OE-ephys-course/_static/images/logos/oe-logo-with-text.png" alt="Open-Ephys Course">
+        OE-Course
+      </a>
+    </li>
   </ul>
 </nav>
 
 <h2>About Me</h2>
-<p>I am a full stack engineer working at the intersection of neuroscience and mechatronics to develop novel therapeutic interfaces capable of integrating multimodal sensory information.</p>
+<p>I am a full stack engineer working at the intersection of neuroscience and mechatronics to develop novel therapeutic
+  interfaces capable of integrating multimodal sensory information.</p>
 <hr style="border-top: 3px dotted #bbb;width:33%;left:33%">
 <h3>About My Research</h3>
-<span id="badgeCont127"><script type="text/javascript" src="assets/js/publons.js"></script></span>
-<p>For my doctorate, I studied motor recovery from stroke in a <bf><a href="https://m053m716.github.io/files/Whishaw-and-Pellis_1990_Structure-of-rat-reaching.pdf">rat reaching model</a></bf> in the lab of <bf><a href="https://scholar.google.com/citations?user=TlPPA0UAAAAJ&hl=en&oi=sra">Randy Nudo</a></bf> at the <bf><a href="https://bioengr.ku.edu/">University of Kansas Medical Center</a></bf>. My doctoral <bf><a href="https://pqdtopen.proquest.com/pubnum/28262386.html">thesis</a></bf> looks at how the <bf><a href="(https://www.nature.com/articles/nature11129">neural population dynamics</a></bf> change as the rat improves at pellet retrievals.</p>
-<p>I now work at the <a href="https://www.meche.engineering.cmu.edu/faculty/neuromechatronics-lab.html">Neuro-Mechatronics Lab at Carnegie Mellon</a>, where I have helped <a href="https://code.nml.wtf">write some code</a> and <a href="https://nml-wiki.org/">work on animal behavioral models</a>.</p>
+<span id="badgeCont127">
+  <script type="text/javascript" src="assets/js/publons.js"></script>
+</span>
+<p>For my doctorate, I studied motor recovery from stroke in a <bf><a
+      href="https://m053m716.github.io/files/Whishaw-and-Pellis_1990_Structure-of-rat-reaching.pdf">rat reaching
+      model</a></bf> in the lab of <bf><a
+      href="https://scholar.google.com/citations?user=TlPPA0UAAAAJ&hl=en&oi=sra">Randy Nudo</a></bf> at the <bf><a
+      href="https://bioengr.ku.edu/">University of Kansas Medical Center</a></bf>. My doctoral <bf><a
+      href="https://pqdtopen.proquest.com/pubnum/28262386.html">thesis</a></bf> looks at how the <bf><a
+      href="(https://www.nature.com/articles/nature11129">neural population dynamics</a></bf> change as the rat improves
+  at pellet retrievals.</p>
+<p>I now work at the <a
+    href="https://www.meche.engineering.cmu.edu/faculty/neuromechatronics-lab.html">Neuro-Mechatronics Lab at Carnegie
+    Mellon</a>, where I have helped <a href="https://code.nml.wtf">write some code</a> and <a
+    href="https://nml-wiki.org/">work on animal behavioral models</a>.</p>
 
 <hr style="border-top: 2px solid #222;width: 80%;left: 10%;top:10px">
 <h2>News</h2>
 <!-- {% include base_path %} -->
- 
+
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.news reversed %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  <div class="news-item" data-aos="fade-up">
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.content }}</p>
-    <img src="{{ site.url }}/assets/images/{{ post.slug }}.webp" alt="{{ post.title }}">
-  </div>
-  <hr style="border-top: 3px dotted #bbb;width:50%;left:25%">
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% if year != written_year %}
+{% capture written_year %}{{ year }}{% endcapture %}
+{% endif %}
+<div class="news-item" data-aos="fade-up">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.content }}</p>
+  <img src="{{ site.url }}/assets/images/{{ post.slug }}.webp" alt="{{ post.title }}">
+</div>
+<hr style="border-top: 3px dotted #bbb;width:50%;left:25%">
 {% endfor %}
 
 <hr style="border-bottom: 2px solid #222;width: 80%;left: 10%;top:10px">
@@ -117,9 +138,13 @@ redirect_from:
 </div>
 
 <div id="Work" class="tabcontent" height="600" width="800">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FNew_York&amp;src=bWRtdXJwaHlAYW5kcmV3LmNtdS5lZHU&amp;src=Y182M2ltYXNyczlzNXFycm8xN2djZ2d0ODc3Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19ucXIzczhraWtqbXFlY3Nvb25jMzFnMHZnY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;color=%23616161&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0" style="border:solid 1px #777" width="750" height="500" frameborder="0" scrolling="no"></iframe>
+  <iframe
+    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FNew_York&amp;src=bWRtdXJwaHlAYW5kcmV3LmNtdS5lZHU&amp;src=Y182M2ltYXNyczlzNXFycm8xN2djZ2d0ODc3Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19ucXIzczhraWtqbXFlY3Nvb25jMzFnMHZnY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;color=%23616161&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0"
+    style="border:solid 1px #777" width="750" height="500" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <div id="Personal" class="tabcontent" height="600" width="800">
-  <iframe id="PersonalCal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FKentucky%2FLouisville&amp;src=bWF4Lm11cnBoeTExQGdtYWlsLmNvbQ&amp;color=%23EF6C00&amp;showPrint=0&amp;showCalendars=0&amp;title=Personal%20Calendar" style="border-width:0" width="750" height="500" frameborder="0" scrolling="no"></iframe>
+  <iframe id="PersonalCal"
+    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FKentucky%2FLouisville&amp;src=bWF4Lm11cnBoeTExQGdtYWlsLmNvbQ&amp;color=%23EF6C00&amp;showPrint=0&amp;showCalendars=0&amp;title=Personal%20Calendar"
+    style="border-width:0" width="750" height="500" frameborder="0" scrolling="no"></iframe>
 </div>
