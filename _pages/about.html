@@ -20,18 +20,21 @@ redirect_from:
 <p>For my doctorate, I studied motor recovery from stroke in a <bf><a href="https://m053m716.github.io/files/Whishaw-and-Pellis_1990_Structure-of-rat-reaching.pdf">rat reaching model</a></bf> in the lab of <bf><a href="https://scholar.google.com/citations?user=TlPPA0UAAAAJ&hl=en&oi=sra">Randy Nudo</a></bf> at the <bf><a href="https://bioengr.ku.edu/">University of Kansas Medical Center</a></bf>. My doctoral <bf><a href="https://pqdtopen.proquest.com/pubnum/28262386.html">thesis</a></bf> looks at how the <bf><a href="(https://www.nature.com/articles/nature11129">neural population dynamics</a></bf> change as the rat improves at pellet retrievals.</p>
 <p>I now work at the <a href="https://www.meche.engineering.cmu.edu/faculty/neuromechatronics-lab.html">Neuro-Mechatronics Lab at Carnegie Mellon</a>, where I have helped <a href="https://code.nml.wtf">write some code</a> and <a href="https://nml-wiki.org/">work on animal behavioral models</a>.</p>
 
-
-
 <hr style="border-top: 2px solid #222;width: 80%;left: 10%;top:10px">
 <h2>News</h2>
-{% include base_path %}
+<!-- {% include base_path %} -->
+ 
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.news reversed %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
-  {% include archive-single.html %}
+  <div class="news-item" data-aos="fade-up">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <img src="/assets/images/{{ post.slug }}.webp" alt="{{ post.title }}">
+  </div>
   <hr style="border-top: 3px dotted #bbb;width:50%;left:25%">
 {% endfor %}
 
