@@ -8,6 +8,7 @@ redirect_from:
   - /cv.html
 ---
 
+
 {% include base_path %}
 {% capture written_label %}'None'{% endcapture %}
 

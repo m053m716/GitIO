@@ -12,6 +12,64 @@ redirect_from:
 
 {% include base_path %}
 
+<style>
+  .navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed; /* Make it stick at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+}
+
+.content {
+  padding-top: 60px; /* Add padding to prevent content overlap */
+}
+
+</style>
+
+<nav class="navbar">
+  <ul>
+    <li>
+      <a href="https://fitts-law-js.glitch.me/">
+        <img src="https://cdn.glitch.global/project-avatar/955142cf-dcd9-43dd-b24e-3a53cf3f4d14.png?1719418247303" alt="Fitts Task">
+        Fitts
+      </a>
+    </li>
+    <!-- Add more tasks here as needed -->
+  </ul>
+</nav>
+
 <h2>About Me</h2>
 <p>I am a full stack engineer working at the intersection of neuroscience and mechatronics to develop novel therapeutic interfaces capable of integrating multimodal sensory information.</p>
 <hr style="border-top: 3px dotted #bbb;width:33%;left:33%">
