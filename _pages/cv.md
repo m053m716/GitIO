@@ -14,26 +14,34 @@ redirect_from:
 ---
 
 ## Education ##
-* B.S. in Biology, Stanford University, 2011
-  + 2-time All-American (Fencing)
+* Postdoc at Carnegie Mellon University Neuro-Mechatronics Lab, 2021-present
 * Ph.D in Bioengineering, University of Kansas, 2020
   + Thesis: *Neurophysiological mechanisms of sensorimotor recovery from stroke*
+* B.S. in Biology, Stanford University, 2011
+  + 2-time All-American (Fencing)
 
 ---
 
 ## Skills ##
 * Full stack neurophysiology engineer
-  * CAD for physical device design
-  * FPGA/microcontroller for closed-loop
-  * C/C++ real-time GUI
-  * Simulink for simulation and state control
-  * Matlab/Python/Tableau for analysis
+  * CAD for physical device design (Fusion, OnShape, KiCAD, EAGLE)
+  * C/C++/Verilog for stuff that needs to be fast
+  * **Matlab**/Python/Tableau for stuff that doesn't
   * CSS/JS for web design
-* Rat pellet retrieval motor model
+  * Unity/Blender for gaming
+* Rat pellet retrieval motor model  
+* Nonhuman primate wrist-center-out motor model  
+* Myoelectric realtime/online interfaces  
+  * High-density surface EMG grids.
 
 ---
 
 ## Work experience ##
+### 2021 - present: Postdoc, CMU ###  
+* Neuro-Mechatronics Lab
+  + PI: Doug Weber & Darcy Griffin
+* Studying sensorimotor integration using models from mice to humans.  
+
 ### 2014 - 2020: Graduate Research Assistant, KUMC ###
 * Cortical Plasticity Lab
   + PI: Randy Nudo
@@ -61,10 +69,5 @@ redirect_from:
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-
----
-
-## Service ##
-See my thoughts on service **[here](https://m053m716.github.io/posts/2020-11-16-Service)**. In general, I am happy to assist those who come to me with honest questions or to collaborate and assist in any capacity that I am able given constraints of time and bandwidth.
 
 ---
