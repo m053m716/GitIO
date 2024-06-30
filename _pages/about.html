@@ -123,7 +123,7 @@ redirect_from:
 {% capture written_year %}{{ year }}{% endcapture %}
 {% endif %}
 <div class="news-item" data-aos="fade-up">
-  <h3>{{ post.title }}</h3>
+  <h3>{{ post.date}}: {{ post.title }}</h3>
   <p>{{ post.content }}</p>
   <img src="{{ site.url }}/assets/images/{{ post.slug }}.webp" alt="{{ post.title }}">
 </div>
